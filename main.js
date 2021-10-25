@@ -7,9 +7,9 @@ const closeMenu = document.querySelector(".hamburger-menu > a")
 
 //APERTURA del menù
 hamburgerIcon.addEventListener("click", function() {
-    hamburgerMenu.style.display = "block";
+    hamburgerMenu.classList.add("active");
 });
 //CHIUSURA del menù
 closeMenu.addEventListener("click", function() {
-    hamburgerMenu.style.display = "none";
+    hamburgerMenu.classList.remove("active");
 });
